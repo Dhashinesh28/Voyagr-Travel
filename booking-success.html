@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/voyagr-logo.svg">
+    <title>Booking Confirmed | Voyagr Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            color: white;
+        }
+        .booking-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(
+                    rgba(3, 40, 42, 0.48),
+                    rgba(3, 40, 42, 0.72)), url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=90");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .booking-content {
+            width: 100%;
+            max-width: 800px;
+            animation: fadeInUp 1s ease;
+        }
+        .success-icon {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 65px;
+            font-weight: 500;
+            border: 7px solid white;
+            border-radius: 50%;
+            background: #16a879;
+            box-shadow: 0 0 0 15px rgba(22, 168, 121, 0.25);
+            animation: popIn 0.8s ease;
+        }
+        .booking-label {
+            color: #9ff0ce;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+        .booking-content h1 {
+            font-size: clamp(38px, 6vw, 68px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            text-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+        }
+        .booking-content h1 span {
+            display: block;
+            color: #8be6bf;
+        }
+        .booking-message {
+            max-width: 680px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ffffff;
+        }
+        .booking-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 38px;
+        }
+        .booking-btn {
+            min-width: 230px;
+            padding: 16px 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 2px solid white;
+            border-radius: 40px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+        .booking-btn:hover {
+            transform: translateY(-4px);
+        }
+        .booking-btn-primary {
+            background: #079e79;
+            border-color: #079e79;
+        }
+        .booking-btn-primary:hover {
+            background: #087c61;
+        }
+        .booking-btn-outline {
+            background: rgba(0, 0, 0, 0.12);
+        }
+        .booking-btn-outline:hover {
+            background: rgba(255, 255, 255, 0.18);
+        }
+        .booking-tagline {
+            margin-top: 55px;
+            color: #9ff0ce;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+        .booking-divider {
+            width: 280px;
+            max-width: 80%;
+            height: 1px;
+            margin: 0 auto 25px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .confetti {
+            position: absolute;
+            top: -20px;
+            width: 9px;
+            height: 15px;
+            border-radius: 3px;
+            animation: confettiFall 7s linear infinite;
+        }
+        .confetti:nth-child(1) {
+            left: 12%;
+            background: #08b58a;
+        }
+        .confetti:nth-child(2) {
+            left: 25%;
+            background: #ffc85c;
+            animation-delay: 1s;
+        }
+        .confetti:nth-child(3) {
+            left: 40%;
+            background: #08b58a;
+            animation-delay: 2s;
+        }
+        .confetti:nth-child(4) {
+            left: 60%;
+            background: #ffc85c;
+            animation-delay: 0.5s;
+        }
+        .confetti:nth-child(5) {
+            left: 75%;
+            background: #08b58a;
+            animation-delay: 1.5s;
+        }
+        .confetti:nth-child(6) {
+            left: 90%;
+            background: #ffc85c;
+            animation-delay: 2.5s;
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.6);
+            }
+            75% {
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes confettiFall {
+            from {
+                transform: translateY(-10vh) rotate(0deg);
+            }
+
+            to {
+                transform: translateY(110vh) rotate(360deg);
+            }
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .booking-page {
+                padding: 35px 18px;
+            }
+            .success-icon {
+                width: 85px;
+                height: 85px;
+                font-size: 50px;
+                border-width: 5px;
+                margin-bottom: 25px;
+            }
+            .booking-label {
+                font-size: 12px;
+                letter-spacing: 3px;
+            }
+            .booking-content h1 {
+                font-size: 38px;
+            }
+            .booking-message {
+                font-size: 15px;
+            }
+            .booking-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 14px;
+                margin-top: 30px;
+            }
+            .booking-btn {
+                width: 100%;
+                max-width: 300px;
+                padding: 15px;
+            }
+            .booking-tagline {
+                margin-top: 40px;
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+        }
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="booking-page">
+        <span class="confetti"></span>
+        <span class="confetti"></span>
+        <span class="confetti"></span>
+        <span class="confetti"></span>
+        <span class="confetti"></span>
+        <span class="confetti"></span>
+        <section class="booking-content">
+            <div class="success-icon">✓</div>
+            <p class="booking-label">
+                BOOKING CONFIRMED
+            </p>
+            <h1>
+                Your Booking Is
+                <span>Confirmed!</span>
+            </h1>
+            <p class="booking-message">
+                Your vacation awaits. Pack your bags, embrace the
+                adventure, and enjoy every moment of your journey!
+            </p>
+            <div class="booking-buttons">
+                <a href="index.html"
+                   class="booking-btn booking-btn-primary">
+                    🏠 Go to Home ↗
+                </a>
+                <a href="destination.html"
+                   class="booking-btn booking-btn-outline">
+                    📍 Explore Destinations ↗
+                </a>
+            </div>
+            <div class="booking-tagline">
+                <div class="booking-divider"></div>
+                SAFE TRAVELS &nbsp; • &nbsp; HAPPY JOURNEYS
+            </div>
+        </section>
+    </main>
+</body>
+</html>

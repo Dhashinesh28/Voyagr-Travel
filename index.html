@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover beautiful destinations, explore travel packages, and create your perfect holiday with Voyagr Travel.">
+    <link rel="icon" href="img/voyagr-logo.svg">
+    <title>Voyagr Travel | Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                Voyagr<span>Travel.</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="destination.html" class="nav-link">Destinations</a></li>
+                <li><a href="package.html" class="nav-link">Packages</a></li>
+                <li><a href="plan-trip.html" class="nav-link">Plan Your Trip</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#login" class="login-button">Login ↗</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <div class="hero-text reveal">
+                    <div class="hero-label">
+                        <span class="status-dot"></span>
+                        YOUR NEXT ADVENTURE STARTS HERE
+                    </div>
+                    <h1>
+                        The world is wide.<br>
+                        <span>Go explore it.</span>
+                    </h1>
+                    <p>
+                        Discover extraordinary destinations, experience
+                        different cultures, and create unforgettable memories
+                        with travel experiences designed around you.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="destination.html" class="btn btn-primary">
+                            Explore Destinations <span>↗</span>
+                        </a>
+                        <a href="plan-trip.html" class="btn btn-glass">
+                            Plan Your Trip
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-avatars">
+                            <span>✈</span>
+                            <span>🌍</span>
+                            <span>🏔</span>
+                        </div>
+                        <div>
+                            <strong>Your journey, your way</strong>
+                            <p>Ready-made packages and custom trips</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-floating-card">
+                    <div class="floating-icon">🌴</div>
+                    <div>
+                        <p>Find your next escape</p>
+                        <strong>Adventure awaits</strong>
+                    </div>
+                    <span class="floating-arrow">↗</span>
+                </div>
+            </div>
+            <!-- Quick Search -->
+            <div class="search-wrapper container">
+                <form class="travel-search" id="travelSearch">
+                    <div class="search-field">
+                        <label for="searchCategory">I'm looking for</label>
+                        <select id="searchCategory" name="category">
+                            <option value="all">All destinations</option>
+                            <option value="Domestic">Domestic</option>
+                            <option value="International">International</option>
+                            <option value="Adventure">Adventure</option>
+                        </select>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field">
+                        <label for="travelDate">Travel date</label>
+                        <input type="date" id="travelDate" name="travelDate">
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field">
+                        <label for="travellers">Travellers</label>
+                        <select id="travellers" name="travellers">
+                            <option value="1">1 Traveller</option>
+                            <option value="2" selected>2 Travellers</option>
+                            <option value="3">3 Travellers</option>
+                            <option value="4">4 Travellers</option>
+                            <option value="5">5 Travellers</option>
+                            <option value="6">6+ Travellers</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-button">
+                        Search <span>↗</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- Introduction Section -->
+        <section class="section introduction" id="introduction">
+            <div class="container intro-grid">
+                <div class="intro-visual reveal">
+                    <div class="intro-main-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=85"
+                            alt="Beautiful mountain lake surrounded by nature"
+                            loading="lazy">
+                    </div>
+                    <div class="intro-small-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=500&q=80"
+                            alt="Scenic mountain landscape"
+                            loading="lazy">
+                    </div>
+                    <div class="intro-badge">
+                        <span class="badge-icon">✦</span>
+                        <div>
+                            <strong>Explore more</strong>
+                            <p>Experience the extraordinary</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-content reveal">
+                    <p class="section-label">WELCOME TO VOYAGR TRAVEL</p>
+                    <h2>
+                        Every journey has a story.
+                        <span>Let's create yours.</span>
+                    </h2>
+                    <p class="section-description">
+                        Travel should be exciting, not complicated.
+                        Voyagr Travel brings destinations, thoughtfully
+                        planned packages, and personalized travel options
+                        together in one place.
+                    </p>
+                    <p class="section-description">
+                        Whether you want a relaxing holiday, an international
+                        adventure, or a journey designed entirely around your
+                        interests, your next experience starts here.
+                    </p>
+                    <div class="intro-points">
+                        <div class="intro-point">
+                            <span>✓</span>
+                            <p>Explore handpicked destinations</p>
+                        </div>
+                        <div class="intro-point">
+                            <span>✓</span>
+                            <p>Choose packages that suit your budget</p>
+                        </div>
+                        <div class="intro-point">
+                            <span>✓</span>
+                            <p>Create your own travel itinerary</p>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-button">
+                        Discover Our Story <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Features Section -->
+        <section class="section features-section" id="features">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">THE VOYAGR DIFFERENCE</p>
+                    <h2>
+                        Everything you need.<br>
+                        <span>One beautiful journey.</span>
+                    </h2>
+                    <p>
+                        From ready-made holidays to personalized adventures,
+                        make your travel planning easier.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">✈</div>
+                        <span class="feature-number">01</span>
+                        <h3>Ready-Made Packages</h3>
+                        <p>
+                            Explore carefully organized packages with
+                            itineraries, accommodation, transport, and
+                            food information.
+                        </p>
+                        <a href="package.html" class="feature-link">
+                            Explore Packages →
+                        </a>
+                    </article>
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">🗺</div>
+                        <span class="feature-number">02</span>
+                        <h3>Custom Trip Planning</h3>
+                        <p>
+                            Build a trip around your preferred destinations,
+                            travel dates, interests, and budget.
+                        </p>
+                        <a href="plan-trip.html" class="feature-link">
+                            Build Your Trip →
+                        </a>
+                    </article>
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">🏨</div>
+                        <span class="feature-number">03</span>
+                        <h3>Stay & Transportation</h3>
+                        <p>
+                            Review accommodation and transportation details
+                            before choosing a package.
+                        </p>
+                        <a href="package.html" class="feature-link">
+                            View Inclusions →
+                        </a>
+                    </article>
+                    <article class="feature-card reveal">
+                        <div class="feature-icon">💎</div>
+                        <span class="feature-number">04</span>
+                        <h3>Flexible Experiences</h3>
+                        <p>
+                            Replace included destinations and explore
+                            additional places according to your travel plans.
+                        </p>
+                        <a href="plan-trip.html" class="feature-link">
+                            Customize Your Trip →
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Destinations -->
+        <section class="section destinations-section" id="featuredDestinations">
+            <div class="container">
+                <div class="section-heading destination-heading reveal">
+                    <p class="section-label">PLACES WORTH EXPLORING</p>
+                    <h2>
+                        Find your next <span>happy place.</span>
+                    </h2>
+                    <p>
+                        From peaceful natural escapes to vibrant international
+                        cities, discover somewhere that inspires you.
+                    </p>
+                </div>
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="category-tab active" data-category="all">
+                        All Places
+                    </button>
+                    <button class="category-tab" data-category="Domestic">
+                        Domestic
+                    </button>
+                    <button class="category-tab" data-category="International">
+                        International
+                    </button>
+                    <button class="category-tab" data-category="Adventure">
+                        Adventure
+                    </button>
+                </div>
+                <div class="destination-grid" id="homeDestinationGrid">
+                    <p class="loading-message">Discovering destinations...</p>
+                </div>
+                <div class="center-button">
+                    <a href="destination.html" class="btn btn-dark">
+                        Explore All Destinations <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Packages -->
+        <section class="section packages-section" id="popularPackages">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">TRAVEL YOUR WAY</p>
+                    <h2>
+                        Popular escapes.<br>
+                        <span>Unforgettable memories.</span>
+                    </h2>
+                    <p>
+                        Explore sample packages for your next getaway.
+                        Package prices are estimates and can be customized.
+                    </p>
+                </div>
+                <div class="package-grid" id="homePackageGrid">
+                    <p class="loading-message">Loading travel packages...</p>
+                </div>
+                <div class="center-button">
+                    <a href="package.html" class="btn btn-primary">
+                        View All Packages <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Custom Trip Banner -->
+        <section class="custom-banner">
+            <div class="custom-banner-overlay"></div>
+            <div class="container custom-banner-content reveal">
+                <p class="section-label">YOUR ADVENTURE, YOUR RULES</p>
+                <h2>
+                    Don't just take a trip.<br>
+                    Create your own story.
+                </h2>
+                <p>
+                    Choose your destinations, customize your itinerary,
+                    and start planning an experience that feels like yours.
+                </p>
+                <a href="plan-trip.html" class="btn btn-light">
+                    Create My Trip <span>↗</span>
+                </a>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="section why-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">WHY VOYAGR TRAVEL?</p>
+                    <h2>
+                        Better planning.<br>
+                        <span>Better experiences.</span>
+                    </h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-item reveal">
+                        <span class="why-check">✓</span>
+                        <div>
+                            <h3>One place to explore</h3>
+                            <p>
+                                Discover destinations and travel packages
+                                in one convenient place.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <span class="why-check">✓</span>
+                        <div>
+                            <h3>Flexible travel options</h3>
+                            <p>
+                                Choose an existing package or create
+                                your own travel itinerary.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <span class="why-check">✓</span>
+                        <div>
+                            <h3>Understand your costs</h3>
+                            <p>
+                                Review estimated prices and package
+                                inclusions before making a decision.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <span class="why-check">✓</span>
+                        <div>
+                            <h3>Travel at your pace</h3>
+                            <p>
+                                Explore experiences that suit your
+                                schedule and personal preferences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Login Section -->
+        <section class="section login-section" id="login">
+            <div class="container login-grid">
+                <div class="login-info reveal">
+                    <p class="section-label">WELCOME BACK, TRAVELLER</p>
+                    <h2>
+                        Your next adventure
+                        <span>is waiting.</span>
+                    </h2>
+                    <p>
+                        Sign in to continue your journey with Voyagr Travel.
+                        This version includes a demonstration login form.
+                    </p>
+                    <div class="login-benefits">
+                        <p>✓ Discover travel experiences</p>
+                        <p>✓ Plan your next getaway</p>
+                        <p>✓ Explore packages and destinations</p>
+                    </div>
+                </div>
+                <form class="login-form reveal" id="loginForm">
+                    <div class="login-form-heading">
+                        <span class="login-form-icon">✈</span>
+                        <div>
+                            <h3>Welcome back</h3>
+                            <p>Enter your details to continue.</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginEmail">Email address</label>
+                        <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">
+                        Sign In <span>↗</span>
+                    </button>
+                    <p class="form-note">
+                        Demonstration only. Secure authentication
+                        will require a backend.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        Voyagr<span>Travel.</span>
+                    </a>
+                    <p>
+                        Discover new places, embrace new experiences,
+                        and make every journey unforgettable.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="destination.html">Destinations</a>
+                    <a href="package.html">Travel Packages</a>
+                    <a href="plan-trip.html">Plan Your Trip</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#login">Login</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Get Inspired</h3>
+                    <p>
+                        Your next unforgettable journey begins with
+                        a single destination.
+                    </p>
+                    <a href="destination.html" class="footer-explore">
+                        Start Exploring ↗
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Voyagr Travel.
+                    All rights reserved.
+                </p>
+                <p>Explore more. Experience more.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>

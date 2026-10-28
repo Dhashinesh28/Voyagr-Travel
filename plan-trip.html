@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your perfect holiday with Voyagr Travel. Customize your destination, travel dates, accommodation, and budget.">
+    <link rel="icon" href="img/voyagr-logo.svg">
+    <title>Plan Your Trip | Voyagr Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Voyagr<span>Travel.</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="destination.html" class="nav-link">Destinations</a></li>
+                <li><a href="package.html" class="nav-link">Packages</a></li>
+                <li><a href="plan-trip.html" class="nav-link active">Plan Your Trip</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html#login" class="login-button">Login ↗</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="plan-page-hero">
+            <div class="plan-page-hero-overlay"></div>
+            <div class="container plan-page-hero-content reveal">
+                <span class="section-tag">YOUR JOURNEY STARTS HERE</span>
+                <h1>Plan Your Perfect Trip</h1>
+                <p>
+                    Choose your destination, customize your journey, and discover
+                    an estimated budget for your next unforgettable adventure.
+                </p>
+                <a href="#tripPlanner" class="btn btn-primary">Start Planning</a>
+            </div>
+        </section>
+        <section class="section plan-page-section" id="tripPlanner">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">CUSTOMIZE YOUR JOURNEY</span>
+                    <h2>Let's Plan Your <span>Next Adventure</span></h2>
+                    <p>
+                        Fill in your travel details to create your personalized trip plan.
+                    </p>
+                </div>
+                <div class="plan-page-layout">
+                    <div class="plan-page-info reveal">
+                        <span class="section-tag">WHY PLAN WITH US?</span>
+                        <h2>Your Journey, Your Way</h2>
+                        <p>
+                            Create a trip that matches your interests, travel dates,
+                            accommodation preferences, and budget.
+                        </p>
+                        <div class="plan-info-card">
+                            <div class="plan-info-icon">🌍</div>
+                            <div>
+                                <h3>Choose Your Destination</h3>
+                                <p>Explore domestic, international, and adventure destinations.</p>
+                            </div>
+                        </div>
+                        <div class="plan-info-card">
+                            <div class="plan-info-icon">📅</div>
+                            <div>
+                                <h3>Customize Your Dates</h3>
+                                <p>Select your departure date, return date, and travel duration.</p>
+                            </div>
+                        </div>
+                        <div class="plan-info-card">
+                            <div class="plan-info-icon">🏨</div>
+                            <div>
+                                <h3>Select Your Stay</h3>
+                                <p>Choose accommodation that suits your travel style.</p>
+                            </div>
+                        </div>
+                        <div class="plan-info-card">
+                            <div class="plan-info-icon">💰</div>
+                            <div>
+                                <h3>Estimate Your Budget</h3>
+                                <p>See how your selected destinations and preferences affect the estimated cost.</p>
+                            </div>
+                        </div>
+                        <div class="plan-info-note">
+                            <h3>Travel Tip</h3>
+                            <p>
+                                Select the places you want to visit and uncheck any
+                                places you want to remove. Your estimated budget
+                                will update automatically.
+                            </p>
+                        </div>
+                    </div>
+                    <form class="plan-trip-form reveal" id="planTripForm">
+                        <div class="form-heading">
+                            <h2>Create Your Trip Plan</h2>
+                            <p>Enter your details below to get started.</p>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="form-section-title">Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="travellerName">Full Name</label>
+                                    <input type="text" id="travellerName" name="travellerName" placeholder="Enter your full name" minlength="2" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="travellerEmail">Email Address</label>
+                                    <input type="email" id="travellerEmail" name="travellerEmail" placeholder="Enter your email address" required >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="form-section-title">Destination Details</h3>
+                            <div class="form-group">
+                                <label for="tripDestination">Choose Your Destination</label>
+                                <select id="tripDestination" name="tripDestination" required>
+                                    <option value="">Select a destination</option>
+                                    <optgroup label="Domestic Destinations">
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Ooty">Ooty</option>
+                                        <option value="Thanjavur">Thanjavur</option>
+                                    </optgroup>
+                                    <optgroup label="International Destinations">
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Bali">Bali</option>
+                                        <option value="Dubai">Dubai</option>
+                                    </optgroup>
+                                    <optgroup label="Adventure Destinations">
+                                        <option value="Himalayas">Himalayas</option>
+                                        <option value="Rishikesh">Rishikesh</option>
+                                    </optgroup>
+                                    <option value="Other">Other Destination</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="otherDestinationGroup" hidden>
+                                <label for="otherDestination">Enter Your Destination</label>
+                                <input type="text" id="otherDestination" name="otherDestination" placeholder="Enter your preferred destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="travelType">Travel Category</label>
+                                <select id="travelType" name="travelType" required>
+                                    <option value="">Select travel category</option>
+                                    <option value="Domestic">Domestic Travel</option>
+                                    <option value="International">International Travel</option>
+                                    <option value="Adventure">Adventure Travel</option>
+                                    <option value="Relaxation">Relaxation Travel</option>
+                                </select>
+                                <small id="travelTypeMessage">
+                                    Your travel category will be selected automatically for recognized destinations.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="additionalDestinations">Additional Destinations</label>
+                                <textarea  id="additionalDestinations" name="additionalDestinations" rows="3" placeholder="Enter additional places separated by commas"></textarea>
+                                <small>Separate multiple destinations with commas.</small>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="form-section-title">Suggested Places to Visit</h3>
+                            <p class="suggested-places-message" id="suggestedPlacesMessage">
+                                Choose a destination to see suggested places to visit.
+                            </p>
+                            <div class="suggested-places-list" id="suggestedPlacesList"></div>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="form-section-title">Travel Schedule</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="departureDate">Departure Date</label>
+                                    <input type="date" id="departureDate" name="departureDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="returnDate">Return Date</label>
+                                    <input type="date" id="returnDate" name="returnDate" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="travellerCount">Number of Travelers</label>
+                                <select id="travellerCount" name="travellerCount" required>
+                                    <option value="1">1 Traveler</option>
+                                    <option value="2">2 Travelers</option>
+                                    <option value="3">3 Travelers</option>
+                                    <option value="4">4 Travelers</option>
+                                    <option value="5">5 Travelers</option>
+                                    <option value="6">6 Travelers</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="stayPreference">Accommodation Preference</label>
+                                <select id="stayPreference" name="stayPreference" required>
+                                    <option value="No preference">No Preference</option>
+                                    <option value="Budget stay">Budget Stay</option>
+                                    <option value="Standard hotel">Standard Hotel</option>
+                                    <option value="Luxury resort">Luxury Resort</option>
+                                    <option value="Camping">Camping</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h3 class="form-section-title">Estimated Travel Budget</h3>
+                            <div class="budget-estimate-card">
+                                <span>Estimated Total Cost</span>
+                                <div class="budget-estimate-amount" id="budgetDisplay">
+                                    ₹0
+                                </div>
+                                <p>
+                                    This estimate changes according to your destination,
+                                    travelers, travel duration, accommodation, and selected places.
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label for="calculatedBudget">Calculated Budget</label>
+                                <input  type="text" id="calculatedBudget" name="calculatedBudget" value="₹0" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="tripNotes">Additional Requirements</label>
+                                <textarea  id="tripNotes" name="tripNotes" rows="4" placeholder="Tell us about any additional requirements"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-message" id="formMessage" role="alert" hidden></div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                Create My Trip Plan
+                            </button>
+                            <button type="reset" class="btn btn-secondary" id="resetTripForm">
+                                Clear Form
+                            </button>
+                        </div>
+                        <p class="form-disclaimer">
+                            This is a trip-planning demonstration. The estimated cost
+                            is illustrative and does not represent a confirmed reservation
+                            or actual travel booking.
+                        </p>
+                    </form>
+                </div>
+                <section class="trip-summary-section" id="tripSummary" hidden>
+                    <div class="trip-receipt" id="tripReceipt">
+                        <div class="receipt-success">
+                            <div class="receipt-success-icon">✓</div>
+                            <span class="section-tag">TRIP PLAN CREATED</span>
+                            <h2>Your Trip Has Been Successfully Booked!</h2>
+                            <p>
+                                Thank you for choosing Voyagr Travel! Your trip plan
+                                has been created successfully. Get ready for an amazing
+                                journey and enjoy your trip!
+                            </p>
+                        </div>
+                        <div class="receipt-divider"></div>
+                        <div class="receipt-header">
+                            <a href="index.html" class="logo">Voyagr<span>Travel.</span></a>
+                            <span class="receipt-status">Trip Plan Confirmation</span>
+                        </div>
+                        <div class="receipt-details">
+                            <div class="receipt-detail">
+                                <span>Receipt Number</span>
+                                <strong id="receiptNumber">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Created On</span>
+                                <strong id="receiptDate">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Traveler Name</span>
+                                <strong id="summaryName">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Email Address</span>
+                                <strong id="summaryEmail">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Destination</span>
+                                <strong id="summaryDestination">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Travel Category</span>
+                                <strong id="summaryTravelType">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Departure Date</span>
+                                <strong id="summaryDeparture">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Return Date</span>
+                                <strong id="summaryReturn">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Travel Duration</span>
+                                <strong id="summaryDuration">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Number of Travelers</span>
+                                <strong id="summaryTravelers">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Accommodation</span>
+                                <strong id="summaryAccommodation">-</strong>
+                            </div>
+                            <div class="receipt-detail">
+                                <span>Estimated Total</span>
+                                <strong id="summaryBudget">₹0</strong>
+                            </div>
+                        </div>
+                        <div class="receipt-places-section">
+                            <h3>Your Selected Places</h3>
+                            <ul id="summaryPlaces"></ul>
+                        </div>
+                        <div class="receipt-additional-section" id="summaryAdditionalSection" hidden>
+                            <h3>Additional Destinations</h3>
+                            <p id="summaryAdditionalDestinations"></p>
+                        </div>
+                        <div class="receipt-notes-section" id="summaryNotesSection" hidden>
+                            <h3>Additional Requirements</h3>
+                            <p id="summaryNotes"></p>
+                        </div>
+                        <div class="receipt-footer">
+                            <p>Thank you for planning your journey with Voyagr Travel.</p>
+                            <p>Have a wonderful and memorable trip!</p>
+                        </div>
+                    </div>
+                    <div class="receipt-actions">
+                        <button type="button" class="btn btn-primary" id="printTripPlan">
+                            Print Receipt
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="editTripPlan">
+                            Edit Trip Plan
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="custom-banner">
+            <div class="container custom-banner-content">
+                <div>
+                    <span class="section-tag">MAKE MEMORIES</span>
+                    <h2>Your Next Adventure Is Waiting</h2>
+                    <p>Start planning today and make your travel dreams come true.</p>
+                </div>
+                <a href="#tripPlanner" class="btn btn-primary">Plan Your Trip</a>
+            </div>
+        </section>
+    </main>
+<!--FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Voyagr<span>Travel.</span></a>
+                    <p>
+                        Discover amazing destinations, create unforgettable memories,
+                        and make every journey special with Voyagr Travel.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="package.html">Packages</a></li>
+                        <li><a href="plan-trip.html">Plan Your Trip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#features">Our Features</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Voyagr Travel. All rights reserved.</p>
+                <p>Explore More. Travel Better.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>

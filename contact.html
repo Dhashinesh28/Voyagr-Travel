@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/voyagr-logo.svg">
+    <title>Contact Us | Voyagr Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--  HEADER  -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo"> Voyagr<span>Travel.</span> </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home" class="nav-link ">Home</a></li>
+                <li><a href="index.html#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="index.html #features" class="nav-link">Features</a></li>
+                <li><a href="destination.html" class="nav-link">Destinations</a></li>
+                <li><a href="package.html" class="nav-link">Packages</a></li>
+                <li><a href="plan-trip.html" class="nav-link">Plan Your Trip</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="index.html#login" class="login-button">Login ↗</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-content">
+            <span class="contact-label">WE ARE HERE TO HELP</span>
+            <h1>
+                Let's Start Your
+                <span>Next Adventure</span>
+            </h1>
+            <p>
+                Have questions about your next trip? Need help exploring
+                destinations or choosing a travel package? Contact us
+                and let us help you plan a memorable journey.
+            </p>
+            <a href="#contact-section" class="contact-hero-btn">
+                Get in Touch
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="contact-hero-bottom">
+            <span>
+                <i class="fa-solid fa-comments"></i>
+                We Are Here for You
+            </span>
+            <span>
+                <i class="fa-solid fa-earth-americas"></i>
+                Explore the World
+            </span>
+            <span>
+                <i class="fa-solid fa-heart"></i>
+                Travel with Confidence
+            </span>
+        </div>
+    </section>
+    <!-- CONTACT INTRODUCTION -->
+    <section class="contact-intro section-padding">
+        <div class="contact-container">
+            <div class="contact-section-heading">
+                <span class="contact-label">CONTACT VOYAGR TRAVEL</span>
+                <h2>
+                    We'd Love to
+                    <span>Hear From You</span>
+                </h2>
+                <p>
+                    Every great journey begins with a conversation.
+                    Reach out to us with your questions, travel ideas,
+                    or suggestions. We are happy to hear from you.
+                </p>
+            </div>
+            <div class="contact-info-grid">
+                <article class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>
+                        Send us your questions and travel enquiries.
+                    </p>
+                    <a href="mailto:hello@voyagrtravel.com">
+                        hello@voyagrtravel.com
+                    </a>
+                </article>
+                <!-- Phone Information -->
+                <article class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>
+                        Get in touch with us for travel-related enquiries.
+                    </p>
+                    <a href="tel:+910000000000"> +91 00000 00000</a>
+                </article>
+                <article class="contact-info-card">
+                    <div class="contact-info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>
+                        We are ready to help you plan your next journey.
+                    </p>
+                    <span>India</span>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT FORM -->
+    <section class="contact-section section-padding" id="contact-section">
+        <div class="contact-container contact-grid">
+            <div class="contact-form-content">
+                <span class="contact-label">GET IN TOUCH</span>
+                <h2>
+                    Tell Us About
+                    <span>Your Travel Plans</span>
+                </h2>
+                <p>
+                    Have a question or need help planning your trip?
+                    Complete the form with your details and message.
+                    We look forward to hearing from you.
+                </p>
+                <div class="contact-benefits">
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Ask questions about destinations</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Explore travel packages</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Share your feedback and suggestions</span>
+                    </div>
+                </div>
+                <div class="contact-support-card">
+                    <div class="contact-support-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h3>Need Travel Assistance?</h3>
+                        <p>
+                            Share your questions with us and let us
+                            help you plan your next adventure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <div class="contact-form-heading">
+                    <h3>Send Us a Message</h3>
+                    <p>
+                        Fill in the details below.
+                    </p>
+                </div>
+                <form id="contactForm">
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="name" placeholder="Enter your full name" required minlength="3">
+                        </div>
+                        <div class="contact-form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number" pattern="[0-9+\-\s()]{7,20}">
+                        </div>
+                        <div class="contact-form-group">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" name="subject" required >
+                                <option value="">Select a subject</option>
+                                <option value="destination">Destination Enquiry</option>
+                                <option value="package">Travel Package</option>
+                                <option value="booking">Booking Enquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="contactMessage">Your Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us how we can help you..." required minlength="10"></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit-btn">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <p class="contact-form-note">
+                        <i class="fa-solid fa-lock"></i>
+                        Please provide accurate information so we can
+                        understand your enquiry.
+                    </p>
+                    <p id="contactFormMessage" class="contact-form-message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- TRAVEL INSPIRATION -->
+    <section class="contact-banner">
+        <div class="contact-banner-overlay"></div>
+        <div class="contact-container contact-banner-content">
+            <span class="contact-label">YOUR JOURNEY STARTS HERE</span>
+            <h2>
+                Have a Dream Destination?
+                <span>Let's Make It Happen.</span>
+            </h2>
+            <p>
+                Discover beautiful places, explore exciting travel
+                packages, and start planning your next adventure
+                with Voyagr Travel.
+            </p>
+            <div class="contact-banner-buttons">
+                <a href="destination.html" class="contact-light-btn">
+                    Explore Destinations
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="plan-trip.html" class="contact-outline-btn">
+                    Plan Your Trip
+                </a>
+            </div>
+        </div>
+    </section>
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo footer-logo">
+                        Voyagr<span>Travel.</span>
+                    </a>
+                    <p>
+                        Discover new places, embrace new experiences,
+                        and make every journey unforgettable.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="destination.html">Destinations</a>
+                    <a href="package.html">Travel Packages</a>
+                    <a href="plan-trip.html">Plan Your Trip</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#login">Login</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Get Inspired</h3>
+                    <p>
+                        Your next unforgettable journey begins with
+                        a single destination.
+                    </p>
+                    <a href="destination.html" class="footer-explore">
+                        Start Exploring ↗
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © <span id="currentYear"></span> Voyagr Travel.
+                    All rights reserved.
+                </p>
+                <p>Explore more. Experience more.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
